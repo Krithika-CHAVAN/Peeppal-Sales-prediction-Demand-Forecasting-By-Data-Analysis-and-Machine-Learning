@@ -180,3 +180,17 @@ The results can be used for:
 
 - Strategic Decision Making: Helping businesses plan marketing and sales strategies for future years.
 
+##  Conclusion
+
+This project presents an end-to-end approach for retail sales prediction and forecasting using data analysis,time series analysis ,ARIMA modeling and machine learning . 
+It highlights the power of machine learning in uncovering trends and driving smart business decisions and transformation
+
+
+### 📬 Contact:
+
+Made with ❤️ by [Krithika Chavan](https://github.com/Krithika-CHAVAN)  
+
+Feel free to connect on [LinkedIn](#linkedin.com/in/krithika-chavan/) or 
+
+Reach out via [email](krithichavan@gmail.com).
+
