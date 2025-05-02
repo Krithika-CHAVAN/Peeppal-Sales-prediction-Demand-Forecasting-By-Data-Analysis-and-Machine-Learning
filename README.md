@@ -104,7 +104,8 @@ This helps in detecting seasonal patterns, growth trends, or sales decline.
 - Categorical Variables Encoding: Using Label Encoding for categorical features such as ITEM_COLOR, Year, and Site to make 
   the data usable for machine learning algorithms.
 
-  ![Model coeffiecient]([Model-coeffiecien.png)
+  ![Model coeffiecient]([Model Coeffiecien.png)
+
   
 ## Model Development & Evaluation:
 
@@ -125,6 +126,7 @@ The best-performing model was selected for forecasting future sales based on co-
 
 ![Regression Outcomes](Regression-outcomes.png)
 
+
 ## Time Series Forecasting (ARIMA): 
 
 **The ARIMA (AutoRegressive Integrated Moving Average) model was used to forecast future sales for each product color from 2020 to 2026**.
@@ -143,18 +145,22 @@ The following graph shows both the historical sales data and the forecasted sale
 **Forecasted sales for a specific product color (2020-2026)**:
 
 - Sales forecast for white:
+  
  ![Sales forecast for white]Sales forecast for white.png)
 
 - Sales forecast for lime:
+  
  ![Sales forecast for lime ](Sales forecast for lime.png)
 
 - Sales forecast for Blue:
+  
  ![Sales forecast for blue](Sales forecast for blue.png)
 
 -Sales forecast for Yellow:
  !Sales forecast for yellow]Sales forecast for yellow.png)
 
 - Sales forecast for black:
+  
  ![Sales forecast for black]Sales forecast for black.png)
 
 Results & Forecasting
