@@ -56,14 +56,13 @@ The data provides a comprehensive view of sales trends over the years, enabling 
    - **Key Insight**: Certain colors have seen higher sales than others.
    - The graph below shows the sales distribution over the years.
 
-![Sales Distribution](sales-distribution.png)
-
+![Sales Distribution](Sales-distribution.png)
 Figure 1: Distribution of sales data
 
-Item Color Frequency
-A bar chart illustrating the frequency of items in each color, helping to identify the most and least popular product colors.
+**Item Color Frequency**:
+- **Key Insight**: A bar chart illustrating the frequency of items in each color, helping to identify the most and least popular product colors.
 
-
+![Sales by Color](Sales-Colour-Frequency.png)
 Figure 2: Frequency of items by color
 
 Sales Trend Over the Years
