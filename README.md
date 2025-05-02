@@ -65,66 +65,106 @@ Figure 1: Distribution of sales data
 ![Sales by Color](Sales-Colour-Frequency.png)
 Figure 2: Frequency of items by color
 
-Sales Trend Over the Years
-A time series visualization showing the total sales for each year, highlighting trends, growth, or declines over time.
+**Sales Trend Over the Years**
+- **Key Insight**: A time series visualization showing the total sales for each year, highlighting trends, growth, or declines over time.
 
+![Sales by year](Sales-by-Year.png)
 
 Figure 3: Total sales per year
 
-Sales by Site
-A box plot visualizing sales distribution across different sites, revealing differences in sales performance across regions.
+**Sales by Site**
+ **Key Insight**: A box plot visualizing sales distribution across different sites, revealing differences in sales performance across regions.
 
+![Sales by site](Sales-by-site.png)
 
 Figure 4: Sales distribution by site
 
-Feature Engineering
-Feature engineering involved preparing the dataset for model training by:
+## Data Analysis:
+**1. Correlation Heatmap**
+I used a heatmap to examine the linear relationships between numerical features in our dataset.
 
-Handling Missing Values: Missing values were handled appropriately to avoid any issues during model training.
+This helps us identify which variables are strongly or weakly correlated, High correlation between SALES and revenue generated per sale implies higher sales contribute more to revenue — a key business insight for forecasting.
 
-Categorical Variables Encoding: Using Label Encoding for categorical features such as ITEM_COLOR, Year, and Site to make the data usable for machine learning algorithms.
+![Correlated Heatmap](Correlated-Heatmap.png)
 
-One-Hot Encoding: Applied one-hot encoding on categorical variables like Item Name and Year to create binary columns for each category.
+**Yearly Sales Trend**
+I plotted total sales per year to uncover trends over time.
 
-Additional features were created by extracting the Year from the Sales Date for aggregation.
+![Yearly sales trends](Yearly-sales-trends.png)
 
-Model Development & Evaluation
-Multiple machine learning models were employed to predict retail sales:
+This helps in detecting seasonal patterns, growth trends, or sales decline.
 
-Linear Regression: A basic linear model to predict sales based on various features.
+## Feature Engineering:
+- Feature engineering involved preparing the dataset for model training:
+- Dropped columns:
+- sales date – Converted to Year, so it’s redundant
+- revenue generated, MRP – Avoid data leakage or irrelevant for model
+- Removed target (SALES) from the test set to prevent it from influencing model predictions.
+- Handling Missing Values: Missing values were handled appropriately to avoid any issues during model training.
+- Categorical Variables Encoding: Using Label Encoding for categorical features such as ITEM_COLOR, Year, and Site to make 
+  the data usable for machine learning algorithms.
 
-Decision Tree Regressor: A decision tree model to capture non-linear relationships.
+  ![Model coeffiecient]([Model-coeffiecien.png)
+  
+## Model Development & Evaluation:
 
-Random Forest Regressor: An ensemble model for improved accuracy and robustness.
+- Multiple machine learning models were employed to predict retail sales:
 
-Ridge Regression: A regularized regression model to prevent overfitting.
+- **Linear Regression**: A basic linear model to predict sales based on various features.
 
-XGBoost: A powerful gradient boosting model known for its predictive performance.
+- **Decision Tree Regressor**: A decision tree model to capture non-linear relationships.
 
-For each model, performance was evaluated using the Root Mean Squared Error (RMSE) and Cross-Validation scores. The best-performing model was selected for forecasting future sales.
+- **Random Forest Regressor**: An ensemble model for improved accuracy and robustness.
 
-Time Series Forecasting (ARIMA)
-The ARIMA (AutoRegressive Integrated Moving Average) model was used to forecast future sales for each product color from 2020 to 2026. Key steps included:
+- **Ridge Regression**: A regularized regression model to prevent overfitting.
 
-Stationarity Check: Ensuring the data was stationary by checking for trends or seasonality and applying necessary transformations.
+- **XGBoost**: A powerful gradient boosting model known for its predictive performance.
 
-Model Fitting: The ARIMA model was fitted on yearly sales data, and forecasted sales for the next 7 years were generated.
+For each model, performance was evaluated using the Root Mean Squared Error (RMSE) and Cross-Validation scores. 
+The best-performing model was selected for forecasting future sales based on co-effiecients.
 
-Forecasting: Future sales were predicted for each color, visualized from 2020 to 2026.
+![Regression Outcomes](Regression-outcomes.png)
 
-Example of Sales Forecast for a Product Color
+## Time Series Forecasting (ARIMA): 
+
+**The ARIMA (AutoRegressive Integrated Moving Average) model was used to forecast future sales for each product color from 2020 to 2026**.
+
+-Key steps included:
+
+- Stationarity Check: Ensuring the data was stationary by checking for trends or seasonality and applying necessary transformations.
+
+- Model Fitting: The ARIMA model was fitted on yearly sales data, and forecasted sales for the next 7 years were generated.
+
+- Forecasting: Future sales were predicted for each color, visualized from 2020 to 2026.
+
 The following graph shows both the historical sales data and the forecasted sales for a specific ITEM_COLOR:
 
 
-Figure 5: Forecasted sales for a specific product color (2020-2026)
+**Forecasted sales for a specific product color (2020-2026)**:
+
+- Sales forecast for white:
+ ![Sales forecast for white]Sales forecast for white.png)
+
+- Sales forecast for lime:
+ ![Sales forecast for lime ](Sales forecast for lime.png)
+
+- Sales forecast for Blue:
+ ![Sales forecast for blue](Sales forecast for blue.png)
+
+-Sales forecast for Yellow:
+ !Sales forecast for yellow]Sales forecast for yellow.png)
+
+- Sales forecast for black:
+ ![Sales forecast for black]Sales forecast for black.png)
 
 Results & Forecasting
-After evaluating all models, the ARIMA model was used for time series forecasting, which provides a clear, year-over-year sales prediction for each ITEM_COLOR. The results can be used for:
+After evaluating all models, the ARIMA model was used for time series forecasting, which provides a , year-over-year sales prediction for each ITEM_COLOR.
 
-Demand Forecasting: Anticipating future demand for different product colors.
+The results can be used for:
 
-Inventory Management: Optimizing stock levels based on forecasted sales.
+- Demand Forecasting: Anticipating future demand for different product colors.
 
-Strategic Decision Making: Helping businesses plan marketing and sales strategies for future years.
+- Inventory Management: Optimizing stock levels based on forecasted sales.
 
-Installation & Usage# Peeppal-Sales-prediction-Forecasting-using-ML
+- Strategic Decision Making: Helping businesses plan marketing and sales strategies for future years.
+
