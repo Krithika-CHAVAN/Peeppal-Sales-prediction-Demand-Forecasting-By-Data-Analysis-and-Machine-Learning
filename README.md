@@ -1,4 +1,4 @@
-#  Sales Prediction and Demand Forecasting using Machine Learning for Peeppal( Organic Clothing Brand)
+#  Sales Prediction and Demand Forecasting using Data Analysis Machine Learning for Peeppal( SBL Organic Clothing Brand)
 This repository presents a comprehensive solution for predicting retail sales and forecasting demand for various products using machine learning and time series analysis. The project aims to utilize historical sales data to predict future trends in retail sales, empowering businesses and to make data-driven decisions in inventory management, demand forecasting, and strategic planning. This is an amalysis based on real sales data taken from a startup company called SBL Organic Clothing LLP in Bangalore, India. The main objective is to analyse predictions and submit a detailed report as part of dissertation during my masters.
 
 #  Table of Content:
