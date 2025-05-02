@@ -122,8 +122,7 @@ This helps in detecting seasonal patterns, growth trends, or sales decline.
 For each model, performance was evaluated using the Root Mean Squared Error (RMSE) and Cross-Validation scores. 
 The best-performing model was selected for forecasting future sales based on co-effiecients.
 
-![Regression Outcomes](Regression-Outcomes.png)
-
+ ![Regression Outcomes](Regression-Outcomes.png)
 
 ## Time Series Forecasting (ARIMA): 
 
@@ -144,28 +143,31 @@ The following graph shows both the historical sales data and the forecasted sale
 
 - Sales forecast for white:
   
- ![Sales forecast for white]Sales-forecast-for-white.png)
+ ![Sales forecast for white ](sales-forecast-for-white.png)
  
 
+ 
 - Sales forecast for lime:
   
- ![Sales forecast for lime ](Sales forecast for lime.png)
+ ![Sales forecast for lime ](sales-forecast-for-lime.png)
+ 
  
 
 - Sales forecast for Blue:
   
- ![Sales forecast for blue](Sales forecast for blue.png)
+ ![Sales forecast for blue](sales-forecast-for-blue.png)
+
  
 
 -Sales forecast for Yellow:
 
- !Sales forecast for yellow]Sales forecast for yellow.png)
+ ![Sales forecast for yellow](sales-forecast-for-yellow.png)
+
  
 
 - Sales forecast for black:
   
- ![Sales forecast for black]Sales-forecast-for-black.png)
-
+ ![Sales forecast for black](sales-forecast-for-black.png)
 
 Results & Forecasting
 After evaluating all models, the ARIMA model was used for time series forecasting, which provides a , year-over-year sales prediction for each ITEM_COLOR.
