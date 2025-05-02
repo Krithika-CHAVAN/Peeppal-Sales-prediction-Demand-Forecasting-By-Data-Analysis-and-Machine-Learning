@@ -157,11 +157,12 @@ The following graph shows both the historical sales data and the forecasted sale
  ![Sales forecast for blue](Sales forecast for blue.png)
 
 -Sales forecast for Yellow:
+
  !Sales forecast for yellow]Sales forecast for yellow.png)
 
 - Sales forecast for black:
   
- ![Sales forecast for black]Sales forecast for black.png)
+ ![Sales forecast for black]Sales-forecast-for-black.png)
 
 Results & Forecasting
 After evaluating all models, the ARIMA model was used for time series forecasting, which provides a , year-over-year sales prediction for each ITEM_COLOR.
