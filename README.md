@@ -190,7 +190,7 @@ It highlights the power of machine learning in uncovering trends and driving sma
 
 Made with ❤️ by [Krithika Chavan](https://github.com/Krithika-CHAVAN)  
 
-Feel free to connect on [LinkedIn](#linkedin.com/in/krithika-chavan/) or 
+Feel free to connect on [LinkedIn](#linkedin.com/in/krithika-chavan/) 
 
 Reach out via [email](krithichavan@gmail.com).
 
