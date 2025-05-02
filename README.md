@@ -85,7 +85,7 @@ I used a heatmap to examine the linear relationships between numerical features 
 
 This helps us identify which variables are strongly or weakly correlated, High correlation between SALES and revenue generated per sale implies higher sales contribute more to revenue — a key business insight for forecasting.
 
-![Correlated Heatmap](Correlated-Heatmap.png)
+![Correlated Heatmap](Correlated-HeatMap.png)
 
 **Yearly Sales Trend**
 I plotted total sales per year to uncover trends over time.
@@ -104,7 +104,7 @@ This helps in detecting seasonal patterns, growth trends, or sales decline.
 - Categorical Variables Encoding: Using Label Encoding for categorical features such as ITEM_COLOR, Year, and Site to make 
   the data usable for machine learning algorithms.
 
-  ![Model coeffiecient]([Model Coeffiecien.png)
+  ![Model Coefficient]([Model-Coefficient.png)
 
   
 ## Model Development & Evaluation:
@@ -124,7 +124,7 @@ This helps in detecting seasonal patterns, growth trends, or sales decline.
 For each model, performance was evaluated using the Root Mean Squared Error (RMSE) and Cross-Validation scores. 
 The best-performing model was selected for forecasting future sales based on co-effiecients.
 
-![Regression Outcomes](Regression-outcomes.png)
+![Regression Outcomes](Regression-Outcomes.png)
 
 
 ## Time Series Forecasting (ARIMA): 
